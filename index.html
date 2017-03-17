@@ -7,15 +7,29 @@
   <title>TEDxSanLuisObispo 2017</title>
 
   <link href="css/flow.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jquery.fullpage.min.js"></script>
 
 </head>
 <body>
-
-  <div class="flowContainer clearfix">
   
-    
-  
+  <div id="fullpage">
+    <div class="section hero">Yo</div>
+    <div class="section">Uo</div>
+    <div class="section">Ah</div>
+    <div class="section">Bro</div>
   </div>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+      $('#fullpage').fullpage();
+  });
+  
+</script>
 
 </body>
 </html>
