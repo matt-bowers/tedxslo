@@ -71,8 +71,8 @@ a {
   }
 }
 
-.about {
-  background-color: #333;
+.about, .spon {
+  background-color: #222;
   background-image: url(/images/tedx_2.jpg);
   background-position: left center;
   background-size: cover;
@@ -80,16 +80,6 @@ a {
   .cont {
     width: 90%;
     margin: 0 5%;
-  }
-  h1 {
-    font-size: 250%;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    padding-bottom: 20px;
-    @media only screen and (min-width: 769px) {
-      font-size: 400%;
-    }
   }
   h2 {
     font-size: 170%;
@@ -101,6 +91,18 @@ a {
     letter-spacing: 1px;
     margin: 0 auto;
     z-index: 2;
+  }
+}
+
+.about {
+  
+}
+
+.spon {
+  background-image: none;
+  text-align: right;
+  .flow, .fl-m-1, .fl-d-2 {
+    float: right;
   }
 }
 

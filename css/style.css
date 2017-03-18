@@ -67,50 +67,47 @@ a {
     z-index: 1; }
 
 /* line 74, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
-.about {
-  background-color: #333;
+.about, .spon {
+  background-color: #222;
   background-image: url(/images/tedx_2.jpg);
   background-position: left center;
   background-size: cover;
   height: 100%; }
   /* line 80, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
-  .about .cont {
+  .about .cont, .spon .cont {
     width: 90%;
     margin: 0 5%; }
   /* line 84, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
-  .about h1 {
-    font-size: 250%;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    padding-bottom: 20px; }
-    @media only screen and (min-width: 769px) {
-      /* line 84, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
-      .about h1 {
-        font-size: 400%; } }
-  /* line 94, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
-  .about h2 {
+  .about h2, .spon h2 {
     font-size: 170%;
     font-weight: 500;
     color: #ff2b06; }
-  /* line 99, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
-  .about p {
+  /* line 89, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  .about p, .spon p {
     font-weight: 300;
     letter-spacing: 1px;
     margin: 0 auto;
     z-index: 2; }
 
-/* line 107, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 101, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+.spon {
+  background-image: none;
+  text-align: right; }
+  /* line 104, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  .spon .flow, .spon .fl-m-1, .spon .fl-d-2 {
+    float: right; }
+
+/* line 109, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
 .logo {
   position: fixed;
   top: 5vw;
   left: 5vw;
   z-index: 5; }
-  /* line 112, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 114, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
   .logo img {
     width: 250px; }
 
-/* line 117, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 119, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
 nav {
   display: none;
   position: fixed;
@@ -118,14 +115,14 @@ nav {
   right: 5vw;
   z-index: 5; }
   @media only screen and (min-width: 769px) {
-    /* line 117, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 119, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
     nav {
       display: block; } }
-  /* line 126, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 128, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
   nav ul {
     list-style: none;
     margin: 5px 0; }
-    /* line 129, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 131, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
     nav ul li {
       display: inline-block;
       padding-left: 40px; }
