@@ -18,6 +18,9 @@ body, html {
   color: #fff;
 }
 
+::-moz-selection { background-color: #ff2b06; color: #fff; }
+::selection { background-color: #ff2b06; color: #fff; }
+
 h1 {
   font-family: 'Eczar', 'Tiempos Headline', Didot, Garamond, Times, serif;
 }
@@ -127,7 +130,7 @@ a {
 }
 
 .spon {
-  background-image: none;
+  background-image: url(/images/tedx_3.jpg);
   text-align: right;
   .flow, .fl-m-1, .fl-d-2 {
     float: right;
