@@ -10,6 +10,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/indexshow.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <link href="https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:300,400,500,600" rel="stylesheet">
   
@@ -21,23 +22,32 @@
 <body>
   
   <div id="fullpage">
-    <div class="section hero">
+    <div class="section hero" data-anchor="home">
       <div class="pg"></div>
+      <!-- My attempt at SVG path animation, still going to work on this. <div class="topomap">
+        <object type="image/svg+xml" data="images/topomap.svg" class="topomapsvg">
+        </object>
+      </div>-->
       <div class="flow fl-1">
         <h1>Start Climbing.</h1>
         <p>Welcome to TEDxSanLuisObispo. We aim to challenge and inspire the community of San Luis Obispo, CA by Climbing New Peaks.</p>
       </div>
     </div>
-    <div class="section about">
-      <div class="flowContainer clearfix">
-       <div class="flow fl-m-1 fl-d-2">
-        <h2>About TEDxSanLuisObispo</h2>
-         <p>TED is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
-         <p>The TEDxSanLuisObispo team is a group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact. Our annual conference unites the local community and Cal Poly students together, presenting topics that educate and inspire citizens to become catalysts for improvement and change. </p>
-       </div>        
+    <div class="section about" data-anchor="about">
+      <div class="slide active about1">
+        <div class="flowContainer clearfix">
+         <div class="flow fl-m-1 fl-d-2">
+          <h2>About TEDxSanLuisObispo</h2>
+           <p>TED is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
+           <p>The TEDxSanLuisObispo team is a group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact. Our annual conference unites the local community and Cal Poly students together, presenting topics that educate and inspire citizens to become catalysts for improvement and change. </p>
+           <p>&nbsp;<br><a href="#">See more photos from TEDxCalPoly 2016 &rarr;</a></p>
+         </div>        
+        </div>
       </div>
+      <div class="slide about2"></div>
+      <div class="slide about3"></div>
     </div>
-    <div class="section spon">
+    <div class="section spon" data-anchor="sponsorship">
       <div class="flowContainer clearfix">
        <div class="flow fl-m-1 fl-d-2">
         <h2>Sponsorship Opportunities</h2>
@@ -49,17 +59,26 @@
        </div>        
       </div>
     </div>
-    <div class="section connect">Bro</div>
+    <div class="section connect" data-anchor="connect">
+    
+      <div class="flow fl-1">
+        <h1>Climb with us.</h1>
+        <p>Get connected with TEDxSanLuisObispo, and be updated on the latest news coming to your from our team.</p>
+        <p><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="#"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></p>
+        <p>Interested in being a part of the TEDxSanLuisObispo team? Send an inquiry to <a href="mailto:team@tedxslo.com">team@tedxslo.com</a>.</p>
+      </div>
+    
+    </div>
   </div>
   
   <div class="logo">
-    <a href="#"><img src="/images/TEDxSanLuisObispo-logo-hw.png" alt="TEDxSanLuisObispo Logo"></a>
+    <a href="#home"><img src="/images/TEDxSanLuisObispo-logo-hw.png" alt="TEDxSanLuisObispo Logo"></a>
   </div>
   
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#sponsor">Sponsorship</a></li>
+      <li><a href="#sponsorship">Sponsorship</a></li>
       <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
@@ -67,7 +86,9 @@
 <script type="text/javascript">
 
   $(document).ready(function() {
-      $('#fullpage').fullpage();
+      $('#fullpage').fullpage({
+          anchors:['home', 'about', 'sponsorship', 'connect']
+      });
   });
   
   $(document).ready(function() {
