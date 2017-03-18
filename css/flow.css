@@ -27,6 +27,7 @@ img, object, embed, video {
   float: none;
 }
 .maxContain {
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 0;

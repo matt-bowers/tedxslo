@@ -10,23 +10,58 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:300,400,500,600" rel="stylesheet">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/jquery.fullpage.min.js"></script>
+  <script src="js/jquery.particleground.js"></script>
 
 </head>
 <body>
   
   <div id="fullpage">
-    <div class="section hero">Yo</div>
-    <div class="section">Uo</div>
-    <div class="section">Ah</div>
-    <div class="section">Bro</div>
+    <div class="section hero">
+      <div class="pg"></div>
+      <div class="flow fl-1">
+        <h1>Start Climbing.</h1>
+        <p>Welcome to TEDxSanLuisObispo. We aim to challenge and inspire the community of San Luis Obispo, CA by Climbing New Peaks.</p>
+      </div>
+    </div>
+    <div class="section about">
+      <div class="slides">
+        <div class="sl-1"></div>
+        <div class="sl-2"></div>
+        <div class="sl-3"></div>
+        <div class="sl-4"></div>
+      </div>
+    </div>
+    <div class="section spon">Ah</div>
+    <div class="section connect">Bro</div>
   </div>
+  
+  <div class="logo">
+    <a href="#"><img src="/images/TEDxSanLuisObispo-logo-hw.png" alt="TEDxSanLuisObispo Logo"></a>
+  </div>
+  
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#sponsor">Sponsorship</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
 
 <script type="text/javascript">
 
   $(document).ready(function() {
       $('#fullpage').fullpage();
+  });
+  
+  $(document).ready(function() {
+    $('.pg').particleground({
+      dotColor: '#333',
+      lineColor: '#333'
+    });
   });
   
 </script>
