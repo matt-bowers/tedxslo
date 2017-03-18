@@ -8,19 +8,24 @@
 
   <link href="css/flow.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/animsition.min.css" rel="stylesheet" type="text/css">
   <link href="css/indexshow.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:300,400,500,600" rel="stylesheet">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jquery.animsition.min.js"></script>
   <script src="js/jquery.fullpage.min.js"></script>
   <script src="js/jquery.particleground.js"></script>
 
 </head>
 <body>
-  
+ 
+ <div class="animsition">
+ 
   <div id="fullpage">
     <div class="section hero" data-anchor="home">
       <div class="pg"></div>
@@ -40,7 +45,7 @@
           <h2>About TEDxSanLuisObispo</h2>
            <p>TED is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
            <p>The TEDxSanLuisObispo team is a group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact. Our annual conference unites the local community and Cal Poly students together, presenting topics that educate and inspire citizens to become catalysts for improvement and change. </p>
-           <p>&nbsp;<br><a href="#about/1">See more photos from TEDxCalPoly 2016 &rarr;</a></p>
+           <p>&nbsp;<br><a href="#about/1">Use arrow keys to see more photos from TEDxCalPoly 2016 &rarr;</a></p>
          </div>        
         </div>
       </div>
@@ -87,12 +92,15 @@
       <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
+  
+</div>
 
 <script type="text/javascript">
 
   $(document).ready(function() {
       $('#fullpage').fullpage({
-          anchors:['home', 'about', 'sponsorship', 'connect']
+          anchors:['home', 'about', 'sponsorship', 'connect'],
+          controlArrows: false
       });
   });
   
@@ -103,13 +111,29 @@
     });
   });
   
-  $('.my-slider').unslider({
-    animation: 'fade',
-    autoplay: true,
-    arrows: false,
-    nav: false,
-    speed: 1000,
-    delay: 5000
+  $(document).ready(function() {
+    $(".animsition").animsition({
+      inClass: 'fade-in-up-sm',
+      outClass: 'fade-out-down-sm',
+      inDuration: 2000,
+      outDuration: 800,
+      linkElement: '.animsition-link',
+      // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+      loading: true,
+      loadingParentElement: 'body', //animsition wrapper element
+      loadingClass: 'animsition-loading',
+      loadingInner: '', // e.g '<img src="loading.svg" />'
+      timeout: false,
+      timeoutCountdown: 5000,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+      // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    });
   });
   
 </script>
