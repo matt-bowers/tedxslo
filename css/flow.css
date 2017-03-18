@@ -18,10 +18,7 @@ img, object, embed, video {
 }
 
 .flowContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   clear: none;
   float: none;

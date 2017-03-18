@@ -8,6 +8,7 @@
 
   <link href="css/flow.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/indexshow.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
   
   <link href="https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:300,400,500,600" rel="stylesheet">
@@ -28,11 +29,15 @@
       </div>
     </div>
     <div class="section about">
-      <div class="slides">
-        <div class="sl-1"></div>
-        <div class="sl-2"></div>
-        <div class="sl-3"></div>
-        <div class="sl-4"></div>
+      <div class="flowContainer clearfix">
+       <div class="flow fl-m-1 fl-d-2">
+        <h2>About TEDxSanLuisObispo</h2>
+         <p>TED is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
+         <p>The TEDxSanLuisObispo team is a group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact. Our annual conference unites the local community and Cal Poly students together, presenting topics that educate and inspire citizens to become catalysts for improvement and change. </p>
+       </div>
+       <div class="flow fl-2"></div>
+        
+        
       </div>
     </div>
     <div class="section spon">Ah</div>
@@ -62,6 +67,15 @@
       dotColor: '#333',
       lineColor: '#333'
     });
+  });
+  
+  $('.my-slider').unslider({
+    animation: 'fade',
+    autoplay: true,
+    arrows: false,
+    nav: false,
+    speed: 1000,
+    delay: 5000
   });
   
 </script>
