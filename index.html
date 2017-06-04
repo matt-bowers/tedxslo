@@ -8,7 +8,6 @@
 
   <link href="css/flow.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/animsition.min.css" rel="stylesheet" type="text/css">
   <link href="css/indexshow.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
   
@@ -17,50 +16,43 @@
   <link href="https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:300,400,500,600" rel="stylesheet">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/jquery.animsition.min.js"></script>
   <script src="js/jquery.fullpage.min.js"></script>
   <script src="js/jquery.particleground.js"></script>
 
 </head>
 <body>
- 
- <div class="animsition">
- 
+  
   <div id="fullpage">
     <div class="section hero" data-anchor="home">
       <div class="pg"></div>
-      <!-- My attempt at SVG path animation, still going to work on this. <div class="topomap">
-        <object type="image/svg+xml" data="images/topomap.svg" class="topomapsvg">
-        </object>
-      </div>-->
       <div class="flow fl-1">
-        <h1>Coming soon.</h1>
-        <p>Welcome to TEDxSanLuisObispo. We aim to challenge and inspire the community of San Luis Obispo, CA. <!--by <span style="color: #ff2b06; font-weight: 600;">Climbing New Peaks</span>.--></p>
+        <h1><img src="/images/TEDxSLO17-CNP-Wordmark-White.png" alt="Climbing New Peaks logo"></h1>
+        <p>Welcome to TEDxSanLuisObispo. We aim to unite the local San Luis Obispo community, presenting topics that educate and inspire citizens to be catalysts for change.</p>
         <p>&nbsp;<br>Scroll to learn more!</p>
       </div>
     </div>
-    <div class="section about" data-anchor="about">
-      <div class="slide active about1">
-        <div class="flowContainer clearfix">
+    <div class="section about about1" data-anchor="about">
+      <div class="flowContainer clearfix">
          <div class="flow fl-m-1 fl-d-2">
-          <h2>About TEDxSanLuisObispo</h2>
-           <p>TED is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
-           <p>The TEDxSanLuisObispo team is a group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact. Our annual conference unites the local community and Cal Poly students together, presenting topics that educate and inspire citizens to become catalysts for improvement and change. </p>
-           <p>&nbsp;<br><a href="#about/1">Use arrow keys to see more photos from TEDxCalPoly 2016 &rarr;</a></p>
-         </div>        
+           <h2>About TED</h2>
+           <p><strong>TED</strong> is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
+           <p>TEDx was created in the spirit of TED’s mission with a goal to give communities, organizations, and individuals the opportunity to stimulate dialogue and create change through TED experiences at the local level. TEDx events are created and organized by TED enthusiasts within their own communities and are designed to present ideas that are of specific interest to that community, in our case, San Luis Obispo. TEDx features a combination of live presenters and official TEDTalks aimed at sparking intellectual conversation and discussion, while uniting community members behind common ideals.</p>
+         </div>  
+      </div>
+    </div>
+    <div class="section about2">
+      <div class="flowContainer clearfix">
+        <div class="flow fl-m-1 fl-d-2">
+           <h2>About TEDxSanLuisObispo</h2>
+           <p>The TEDxSanLuisObispo team is group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact.</p>
         </div>
       </div>
-      <div class="slide about2"></div>
-      <div class="slide about3"></div>
     </div>
     <div class="section spon" data-anchor="sponsorship">
       <div class="flowContainer clearfix">
        <div class="flow fl-m-1 fl-d-2">
         <h2>Sponsorship Opportunities</h2>
-         <p>TEDx was created in the spirit of TED’s mission with a goal to give communities, organizations, and individuals the opportunity to stimulate dialogue and create change through TED experiences at the local level. TEDx events are created and organized by TED enthusiasts within their own communities and are designed to present ideas that are of specific interest to that community, in our case, San Luis Obispo. TEDx features a combination of live presenters and official TEDTalks aimed at sparking intellectual conversation and discussion, while uniting community members behind common ideals. 
-</p>
-         <p>We encourage you to consider partnering with or sponsoring us to bring TEDxSanLuisObispo to the community. 
-</p>
+         <p>We are currently seeking both in-kind and financial contributions from organizations and departments who share our vision of bringing out San Luis Obispo’s best and brightest for the benefit of the community. We intend to bring TEDxSanLuisObispo to the city year after year, and will be putting all excess donations and profits towards a fund for the next year’s TEDx. A partnership with TEDx and our organizing team is a gesture in support of collaboration, learning, and positive growth among the community.</p>
       <p>&nbsp;<br><a href="mailto:sponsorship@tedxslo.com">Inquire about sponsoring TEDxSanLuisObispo now &rarr;</a></p>
        </div>        
       </div>
@@ -93,14 +85,12 @@
       <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
-  
-</div>
 
 <script type="text/javascript">
 
   $(document).ready(function() {
       $('#fullpage').fullpage({
-          anchors:['home', 'about', 'sponsorship', 'connect'],
+          anchors:['home', 'about', 'about2', 'sponsorship', 'connect'],
           controlArrows: false
       });
   });
@@ -109,28 +99,6 @@
     $('.pg').particleground({
       dotColor: '#333',
       lineColor: '#333'
-    });
-  });
-  
-  $(document).ready(function() {
-    $(".animsition").animsition({
-      inClass: 'fade-in-up-sm',
-      outClass: 'fade-out-down-sm',
-      inDuration: 2000,
-      outDuration: 800,
-      linkElement: '.animsition-link',
-      loading: false,
-      loadingParentElement: 'body',
-      loadingClass: 'animsition-loading',
-      loadingInner: '',
-      timeout: false,
-      timeoutCountdown: 5000,
-      onLoadEvent: true,
-      browser: [ 'animation-duration', '-webkit-animation-duration'],
-      overlay : false,
-      overlayClass : 'animsition-overlay-slide',
-      overlayParentElement : 'body',
-      transition: function(url){ window.location.href = url; }
     });
   });
   

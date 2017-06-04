@@ -14,7 +14,7 @@ body, html {
   background-color: #222;
   height: 100%;
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -22,13 +22,26 @@ body, html {
 ::selection { background-color: #ff2b06; color: #fff; }
 
 h1 {
-  font-family: 'Eczar', 'Tiempos Headline', Didot, Garamond, Times, serif;
+  font-family: 'Work Sans', 'Tiempos Headline', Didot, Garamond, Times, serif;
 }
-
+h2 {
+  font-size: 170%;
+  font-weight: 500;
+  color: #ff2b06;
+}
 p {
+  font-size: 80%;
+  @media only screen and (min-width: 769px) {
+    font-size: 100%;
+  }
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  z-index: 2;
   line-height: 170%;
   padding-bottom: 3%;
 }
+
 
 a {
   color: #fff;
@@ -40,16 +53,20 @@ a {
   @include transition(all 300ms ease);
 }
 
+
 /* Section specific CSS styles */
 .hero {
   width: 100%;
   background-color: #222;
   h1 {
     font-size: 250%;
+    width: 75%;
+    min-width: 380px;
+    max-width: 600px;
+    margin: 0 auto;
     color: #fff;
     text-align: center;
     z-index: 2;
-    padding-bottom: 20px;
     @media only screen and (min-width: 769px) {
       font-size: 400%;
     }
@@ -86,35 +103,16 @@ a {
   }
 }
 
-.about, .spon {
+.about, .about2, .spon {
   background-color: #222;
-  background-image: url(/images/tedx_2.jpg);
   background-position: left center;
   background-size: cover;
   height: 100%;
-  .cont {
-    width: 90%;
-    margin: 0 5%;
-  }
-  h2 {
-    font-size: 170%;
-    font-weight: 500;
-    color: #ff2b06;
-  }
-  p {
-    font-size: 80%;
-    @media only screen and (min-width: 769px) {
-      font-size: 100%;
-    }
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    z-index: 2;
-  }
 }
 
+
+
 .about1 {
-  background-image: url(/images/tedx_2.jpg);
   background-position: left center;
   background-size: cover;
 }
@@ -129,12 +127,15 @@ a {
   background-size: cover;
 }
 
-.spon {
+.about2 {
   background-image: url(/images/tedx_3.jpg);
   text-align: right;
   .flow, .fl-m-1, .fl-d-2 {
     float: right;
   }
+}
+
+.spon {
 }
 
 .connect {
@@ -193,9 +194,6 @@ a {
 
 nav {
   display: none;
-  @media only screen and (min-width: 769px) {
-    display: block;
-  }
   position: fixed;
   top: 5vw;
   right: 5vw;
@@ -207,6 +205,9 @@ nav {
       display: inline-block;
       padding-left: 40px;
     }
+  }
+  @media only screen and (min-width: 769px) {
+    display: block;
   }
 }
 
