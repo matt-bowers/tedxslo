@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document – Navi-"dope"-con */
+
+
+#navicon {
+    position: fixed;
+    top: 6.5vw;
+    right: 5vw;
+    width: 24px;
+    height: 30px;
+    visibility: visible;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: transform .5s ease-out;
+    -moz-transition: transform .5s ease-out;
+    -o-transition: transform .5s ease-out;
+    transition: transform .5s ease-out;
+    cursor: pointer;
+    z-index: 10;
+}   
+@media only screen and (min-width: 769px) {
+    #navicon {
+        visibility: hidden;
+    }
+}
+    
+
+#navicon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    -moz-transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    -o-transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+/* Icon 4 */
+
+#navicon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navicon span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navicon.open span:nth-child(1) {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: -3px;
+    left: 20px;
+}
+
+#navicon.open span:nth-child(2) {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 14px;
+    left: 20px;
+}

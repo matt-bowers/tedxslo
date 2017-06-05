@@ -17,6 +17,16 @@ body, html {
   font-size: 14px;
   color: #fff;
 }
+.animsition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.blank {
+  height: 25vw;
+}
 
 ::-moz-selection { background-color: #ff2b06; color: #fff; }
 ::selection { background-color: #ff2b06; color: #fff; }
@@ -27,7 +37,7 @@ h1 {
 h2 {
   font-size: 170%;
   font-weight: 500;
-  color: #ff2b06;
+  color: #fff;
 }
 p {
   font-size: 80%;
@@ -56,8 +66,21 @@ a {
 
 /* Section specific CSS styles */
 .hero {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
   background-color: #222;
+  overflow: hidden;
+  .titl {
+    display: flex !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
   h1 {
     font-size: 250%;
     width: 75%;
@@ -100,6 +123,33 @@ a {
       height: 100%;
       transform: scale(1.5);
     }
+  }
+}
+
+.reach {
+  h1 {
+    font-size: 150%;
+    width: 75%;
+    min-width: 380px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    @media only screen and (min-width: 769px) {
+      font-size: 300%;
+    }
+  }
+  p {
+    font-size: 110%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 50%;
+    max-width: 650px;
+    min-width: 330px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
   }
 }
 
@@ -193,21 +243,60 @@ a {
 }
 
 nav {
-  display: none;
   position: fixed;
-  top: 5vw;
+  font-size: 120%;
+  top: 80px;
   right: 5vw;
   z-index: 5;
+  @include transition(all 300ms ease);
   ul {
     list-style: none;
     margin: 5px 0;
+    text-align: right;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 300ms ease);
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
     li {
-      display: inline-block;
-      padding-left: 40px;
+      display: block;
+      padding: 0 0 20px 40px;
+    }
+  }
+  .navback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 300ms ease);
+    &.open {
+      opacity: 1;
+      visibility: visible;
     }
   }
   @media only screen and (min-width: 769px) {
     display: block;
+    font-size: 100%;
+    top: 5vw;
+    opacity: 1;
+    visibility: visible;
+    ul {
+      opacity: 1;
+      visibility: visible;
+      li {
+        display: inline-block;
+      }
+    }
+    .navback {
+      display: none;
+    }
   }
 }
 

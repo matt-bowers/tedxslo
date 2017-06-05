@@ -1,0 +1,13 @@
+/* Mixins for SASS */
+/* Body Stuff */
+/* line 13, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+body, html {
+  background-color: #222;
+  height: 100%;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff; }
+
+/* Navigation */
+
+/*# sourceMappingURL=style.css.map */

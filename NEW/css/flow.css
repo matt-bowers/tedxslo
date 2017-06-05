@@ -18,7 +18,6 @@ img, object, embed, video {
 }
 
 .flowContainer {
-  display: block;
   width: 90%;
   margin: 0 auto;
   clear: none;
@@ -43,17 +42,12 @@ img, object, embed, video {
   width: 100%;
   float: left;
   display: block;
-  padding: 10px;
 }
 
 
 /* Mobile Layout: 480px and below. */
 
 .fl-m-1, .fl-1 {
-  clear: none;
-}
-.fl-m-15, .fl-15 {
-  width: 67%;
   clear: none;
 }
 .fl-m-2, .fl-2 {
@@ -91,10 +85,6 @@ img, object, embed, video {
 @media only screen and (min-width: 481px) {
   
 .fl-t-1 {
-  clear: none;
-}
-.fl-t-15 {
-  width: 67%;
   clear: none;
 }
 .fl-t-2 {

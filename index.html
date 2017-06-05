@@ -6,103 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TEDxSanLuisObispo 2017</title>
 
-  <link href="css/flow.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/indexshow.css" rel="stylesheet" type="text/css">
-  <link href="css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
+  <link rel="stylesheet" href="/css/animsition.min.css">
+  <link href="/css/flow.css" rel="stylesheet" type="text/css">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/indexshow.css" rel="stylesheet" type="text/css">
+  <link href="/css/jquery.fullpage.css" rel="stylesheet"  type="text/css">
+  <link rel="stylesheet" href="/css/navicon.css">
+  <link rel="stylesheet" href="/css/smoothStyle.css" type="text/css">
   
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:300,400,500,600" rel="stylesheet">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/jquery.fullpage.min.js"></script>
-  <script src="js/jquery.particleground.js"></script>
+  <script src="/js/jquery.animsition.min.js"></script>
+  <script src="/js/jquery.fullpage.min.js"></script>
+  <script src="/js/jquery.particleground.js"></script>
+  <script src="/js/jquery.parallax.js"></script>
+  <script src="/js/jquery.parallax-scroll.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/jquery.smoothState.min.js"></script>
+  
+  <script src="/js/scripts.js" type="text/javascript"></script>
+  
+  <style type="text/css">
+  
+    .topo {
+      position: absolute;
+      background-image: url(/images/topomapred.svg);
+      width: 100%;
+      height: 100%;
+      background-position: center;
+    }
+    .xcutout {
+      position: absolute;
+      background-image: url(/images/xcutout.svg);
+      width: 150%;
+      height: 150%;
+      margin-left: -25%;
+      margin-top: -25vh;
+      background-size: cover;
+      background-position: center;
+    }
+  
+  </style>
 
 </head>
 <body>
   
-  <div id="fullpage">
-    <div class="section hero" data-anchor="home">
-      <div class="pg"></div>
-      <div class="flow fl-1">
-        <h1><img src="/images/TEDxSLO17-CNP-Wordmark-White.png" alt="Climbing New Peaks logo"></h1>
-        <p>Welcome to TEDxSanLuisObispo. We aim to unite the local San Luis Obispo community, presenting topics that educate and inspire citizens to be catalysts for change.</p>
-        <p>&nbsp;<br>Scroll to learn more!</p>
-      </div>
-    </div>
-    <div class="section about about1" data-anchor="about">
-      <div class="flowContainer clearfix">
-         <div class="flow fl-m-1 fl-d-2">
-           <h2>About TED</h2>
-           <p><strong>TED</strong> is a global nonprofit organization devoted to helping people better understand the world through “Ideas Worth Spreading”. The first TED conference debuted in 1984 where people from the Technology, Entertainment and Design industries converged to share their ideas.</p>
-           <p>TEDx was created in the spirit of TED’s mission with a goal to give communities, organizations, and individuals the opportunity to stimulate dialogue and create change through TED experiences at the local level. TEDx events are created and organized by TED enthusiasts within their own communities and are designed to present ideas that are of specific interest to that community, in our case, San Luis Obispo. TEDx features a combination of live presenters and official TEDTalks aimed at sparking intellectual conversation and discussion, while uniting community members behind common ideals.</p>
-         </div>  
-      </div>
-    </div>
-    <div class="section about2">
-      <div class="flowContainer clearfix">
-        <div class="flow fl-m-1 fl-d-2">
-           <h2>About TEDxSanLuisObispo</h2>
-           <p>The TEDxSanLuisObispo team is group of passionate young leaders dedicated to the pursuit of learning, development, and positive change in their community. We are excited to bring the TEDx experience to San Luis Obispo and share the unique ideas and insight of SLO citizens with TED. With a strong platform for individuals to share their visions, we can create a one of a kind experience with a huge impact.</p>
+  <div class="animsition">
+    
+    <div class="sceneElement" data-viewport="0">
+      <div id="scene" class="hero">
+        <div class="topo layer" data-depth="0.10"></div>
+        <div class="xcutout layer" data-depth="0.15"></div>
+        <div class="titl layer" data-depth="0.50">
+          <div class="flow fl-1">
+            <h1><img src="/images/TEDxSLO17-CNP-Wordmark-White.png" alt="Climbing New Peaks logo"></h1>
+            <p>Welcome to TEDxSanLuisObispo. We aim to unite the local San Luis Obispo community, presenting topics that educate and inspire citizens to be catalysts for change.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section spon" data-anchor="sponsorship">
-      <div class="flowContainer clearfix">
-       <div class="flow fl-m-1 fl-d-2">
-        <h2>Sponsorship Opportunities</h2>
-         <p>We are currently seeking both in-kind and financial contributions from organizations and departments who share our vision of bringing out San Luis Obispo’s best and brightest for the benefit of the community. We intend to bring TEDxSanLuisObispo to the city year after year, and will be putting all excess donations and profits towards a fund for the next year’s TEDx. A partnership with TEDx and our organizing team is a gesture in support of collaboration, learning, and positive growth among the community.</p>
-      <p>&nbsp;<br><a href="mailto:sponsorship@tedxslo.com">Inquire about sponsoring TEDxSanLuisObispo now &rarr;</a></p>
-       </div>        
-      </div>
-    </div>
-    <div class="section connect" data-anchor="connect">
-      <div id="vide">
-        <video id="myVideo" loop muted data-autoplay autoplay>
-          <source src="images/imso.mp4" type="video/mp4">
-          <source src="images/imso.webm" type="video/webm">
-        </video>
-      </div>
-      <div class="flow fl-1">
-        <h1>Reach us.</h1>
-        <p>Get connected with TEDxSanLuisObispo, and be updated on the latest news coming to your from our team.</p>
-        <p><a href="https://www.facebook.com/TEDxCalPoly/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="https://www.linkedin.com/company/tedxsanluisobispo" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="https://www.instagram.com/tedxsanluisobispo/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp; <a href="https://www.snapchat.com/add/tedxslobispo" target="_blank"><i class="fa fa-snapchat-ghost fa-2x" aria-hidden="true"></i></a> &nbsp;&nbsp;</p>
-        <p>Interested in being a part of the TEDxSanLuisObispo team? Send an inquiry to <a href="mailto:team@tedxslo.com">team@tedxslo.com</a>.</p>
-      </div>
     
-    </div>
   </div>
-  
-  <div class="logo">
-    <a href="#home"><img src="/images/TEDxSanLuisObispo-logo-hw.png" alt="TEDxSanLuisObispo Logo"></a>
-  </div>
-  
+    
   <nav>
+   <div class="navback"></div>
+   <div id="navicon">
+     <span></span>
+     <span></span>
+   </div>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#sponsorship">Sponsorship</a></li>
-      <li><a href="#connect">Connect</a></li>
+      <li><a href="/2017/" class="animsition-link" data-target="1">2017</a></li>
+      <li><a href="/sponsors/" class="animsition-link"  data-target="2">Sponsorship</a></li>
+      <li><a href="/about/" class="animsition-link"  data-target="3">About</a></li>
     </ul>
   </nav>
 
-<script type="text/javascript">
-
-  $(document).ready(function() {
-      $('#fullpage').fullpage({
-          anchors:['home', 'about', 'about2', 'sponsorship', 'connect'],
-          controlArrows: false
+  <div class="logo">
+    <a href="/" class="animsition-link"  data-target="0"><img src="/images/TEDxSanLuisObispo-logo-hw.png" alt="TEDxSanLuisObispo Logo"></a>
+  </div>
+    
+  <script src="/js/scripts.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+  
+    // Mobile Navicon Open Nav
+    $(document).ready(function(){
+      $('#navicon').click(function(){
+        $(this).toggleClass('open');
+        $('.navback').toggleClass('open');
+        $('nav ul').toggleClass('open');
       });
-  });
-  
-  $(document).ready(function() {
-    $('.pg').particleground({
-      dotColor: '#333',
-      lineColor: '#333'
     });
-  });
   
-</script>
-
+  </script>
+  
 </body>
 </html>

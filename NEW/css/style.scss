@@ -1,0 +1,22 @@
+/* Mixins for SASS */
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+/* Body Stuff */
+
+body, html {
+  background-color: #222;
+  height: 100%;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+/* Navigation */
