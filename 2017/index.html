@@ -60,25 +60,36 @@
         </div>
       </div>
     </div>-->
-    <div class="blank"></div>
+    <div class="inhero inanimate">
+      <h1 class="viswait"><img src="/images/TEDxSLO17-CNP-Wordmark-White.png" alt="Climbing New Peaks"><span class="viswaitdelay"><img src="/images/oct28stamp.svg" alt="Taking Place October 28, 2017"></span></h1>
+    </div>
     <div class="flowContainer maxContain">
-      <div class="flow fl-m-1 fl-t-15">
-        <h1>Climbing New Peaks<span style="color: #ff2b06;">.</span></h1>
-        <p>The second annual TEDxSanLuisObispo Conference will take place on <strong>October 28th, 2017</strong> in the Christopher Cohan Performing Arts Center on Cal Poly’s campus. This year, our event will be encompassing the theme “Climbing New Peaks.” As members of the San Luis Obispo community, we are proud to live among stunning peaks which characterize our landscape. These peaks represent both challenges and opportunities that we encounter in our everyday lives. Our passionate speakers provide attendees with the courage to take the first step, and the motivation to take on these mountainous events. Through this difficult climb, we strive to grow as both individuals and a community, ready to inspire and transform the world around us.</p>
+      <div>
+        <p>&nbsp;</p>
         <p>&nbsp;</p>
       </div>
-      <div class="flow fl-1">
+      <div class="flow fl-1 twothirds">
+        <p class="hideme imhidden">The second annual TEDxSanLuisObispo Conference will take place on <strong>October 28th, 2017</strong> in the Christopher Cohan Performing Arts Center on Cal Poly’s campus. This year, our event will be encompassing the theme “Climbing New Peaks.” As members of the San Luis Obispo community, we are proud to live among stunning peaks which characterize our landscape.</p>
+        <p class="hideme imhidden">These peaks represent both challenges and opportunities that we encounter in our everyday lives. Our passionate speakers provide attendees with the courage to take the first step, and the motivation to take on these mountainous events. Through this difficult climb, we strive to grow as both individuals and a community, ready to inspire and transform the world around us.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+      <div class="flow fl-1 hideme imhidden">
         <p><img src="/images/pac.jpg" alt=""></p>
       </div>
-      <div class="flow fl-m-1 fl-t-15">
-        <p>Last year the TEDx team put on a spectacular TEDxCalPoly event, selling out the Performing Arts Center venue in just over two weeks. Almost 1,300 individuals attended the event, and a community united behind the TEDx mission was created. Attendees were presented with engaging, thought-provoking speeches challenging their ideas and stimulating discussions on key issues in our community and the world.</p>
-        <p>The event featured 10 speakers across different disciplines, including professors, Cal Poly students and influential community members, centered around the theme, “Plot Twist”. Speakers presented their “Ideas Worth Sharing” to the audience and told stories about how they created, reacted to, or learned from plot twists in their own lives.</p>
-        <p>The event was received with high praise and provided an unforgettable experience for everyone involved. Looking to build upon last year’s success, The TEDx team hopes to bring an even more exceptional TEDxSanLuisObispo event to the city this October. By expanding the event from TEDxCalPoly to TEDxSanLuisObispo, we hope to capture a larger audience and unite Cal Poly students and San Luis Obispo community members together through intellectual conversation.</p>
+      <div class="flow fl-1 twothirds">
+        <p>&nbsp;</p>
+        <p class="hideme imhidden">Last year the TEDx team put on a spectacular TEDxCalPoly event, selling out the Performing Arts Center venue in just over two weeks. Almost 1,300 individuals attended the event, and a community united behind the TEDx mission was created. Attendees were presented with engaging, thought-provoking speeches challenging their ideas and stimulating discussions on key issues in our community and the world.</p>
+        <p class="hideme imhidden">The event featured 10 speakers across different disciplines, including professors, Cal Poly students and influential community members, centered around the theme, “Plot Twist”. Speakers presented their “Ideas Worth Sharing” to the audience and told stories about how they created, reacted to, or learned from plot twists in their own lives.</p>
+        <p class="hideme imhidden">The event was received with high praise and provided an unforgettable experience for everyone involved. Looking to build upon last year’s success, The TEDx team hopes to bring an even more exceptional TEDxSanLuisObispo event to the city this October. By expanding the event from TEDxCalPoly to TEDxSanLuisObispo, we hope to capture a larger audience and unite Cal Poly students and San Luis Obispo community members together through intellectual conversation.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
       </div>
-      <div class="flow fl-1">
+      <div class="flow fl-1 hideme imhidden">
         <p><img src="/images/tedx_3.jpg" alt=""></p>
       </div>
-      <div class="flow fl-m-1 fl-t-15">
+      <div class="flow fl-1 twothirds hideme imhidden">
+        <p>&nbsp;</p>
         <h2>Speakers.</h2>
         <p>Speaker list will be coming soon!</p>
       </div>
@@ -96,7 +107,7 @@
      <span></span>
    </div>
     <ul>
-      <li><a href="/2017/" class="animsition-link" data-target="1">2017</a></li>
+      <li><a href="/2017/" class="animsition-link active" data-target="1">2017</a></li>
       <li><a href="/sponsors/" class="animsition-link"  data-target="2">Sponsorship</a></li>
       <li><a href="/about/" class="animsition-link"  data-target="3">About</a></li>
     </ul>
@@ -116,6 +127,19 @@
         $(this).toggleClass('open');
         $('.navback').toggleClass('open');
         $('nav ul').toggleClass('open');
+      });
+    });
+    
+    // Reveal Content
+    $(document).ready( function() {
+      $(window).scroll( function() {
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + ($(this).outerHeight())*0.65;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+              $(this).removeClass('imhidden');  
+            }
+        }); 
       });
     });
   

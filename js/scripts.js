@@ -6,23 +6,32 @@ $(document).ready(function() {
     inDuration: 800,
     outDuration: 300,
     linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: false,
-    loadingParentElement: 'body', //animsition wrapper element
+    loadingParentElement: 'body',
     loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
+    loadingInner: '',
     timeout: false,
     timeoutCountdown: 5000,
     onLoadEvent: true,
     browser: [ 'animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
+    overlay: false,
+    overlayClass: 'animsition-overlay-slide',
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
+  })
+    .one('animsition.inEnd', function(){
+      $('.viswait').addClass('visible');
+      setTimeout(function(){
+        $('.viswaitdelay').addClass('visible');
+      }, 1200);
+      setTimeout(function(){
+        $('.viswaitthree').addClass('visible');
+      }, 3200);
   });
 });
+
 
 // Parallax Effect
 $('#scene').parallax({
