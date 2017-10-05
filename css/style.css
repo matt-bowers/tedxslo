@@ -1,6 +1,6 @@
 /* Mixins for SASS */
 /*Full Page Sectional CSS Styles */
-/* line 13, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 13, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 body, html {
   background-color: #222;
   height: 100%;
@@ -9,11 +9,11 @@ body, html {
   color: #ccc;
   margin: 0;
   padding: 0; }
-  /* line 21, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 21, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   body strong, html strong {
     color: #fff; }
 
-/* line 25, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 25, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .animsition {
   position: absolute;
   top: 0;
@@ -21,31 +21,31 @@ body, html {
   width: 100%;
   height: 100%; }
 
-/* line 32, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 32, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .blank {
   height: 25vw; }
 
-/* line 36, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 36, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 ::-moz-selection {
   background-color: #ff2b06;
   color: #fff; }
 
-/* line 37, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 37, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 ::selection {
   background-color: #ff2b06;
   color: #fff; }
 
-/* line 39, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 39, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 h1 {
   font-family: 'Work Sans', 'Tiempos Headline', Didot, Garamond, Times, serif; }
 
-/* line 42, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 42, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 h2 {
   font-size: 170%;
   font-weight: 500;
   color: #fff; }
 
-/* line 47, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 47, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 p {
   font-size: 100%;
   font-weight: 300;
@@ -55,11 +55,11 @@ p {
   line-height: 170%;
   padding-bottom: 3%; }
   @media only screen and (min-width: 769px) {
-    /* line 47, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 47, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     p {
       font-size: 110%; } }
 
-/* line 61, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 61, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 a {
   color: #fff;
   text-decoration: none;
@@ -69,12 +69,12 @@ a {
   -ms-transition: color 300ms ease;
   -o-transition: color 300ms ease;
   transition: color 300ms ease; }
-  /* line 65, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 65, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   a:hover {
     color: #ff2b06; }
 
 /* Section specific CSS styles */
-/* line 73, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 73, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .hero {
   position: absolute;
   left: 0;
@@ -83,7 +83,7 @@ a {
   height: 100%;
   background-color: #222;
   overflow: hidden; }
-  /* line 81, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 81, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .hero .titl {
     display: flex !important;
     position: absolute;
@@ -91,7 +91,7 @@ a {
     height: 100%;
     align-items: center;
     justify-content: center; }
-  /* line 89, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 89, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .hero h1 {
     font-size: 250%;
     width: 75%;
@@ -102,10 +102,10 @@ a {
     text-align: center;
     z-index: 2; }
     @media only screen and (min-width: 769px) {
-      /* line 89, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 89, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       .hero h1 {
         font-size: 400%; } }
-  /* line 102, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 102, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .hero p {
     font-size: 110%;
     font-weight: 300;
@@ -116,7 +116,7 @@ a {
     margin: 0 auto;
     text-align: center;
     z-index: 2; }
-  /* line 113, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 113, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .hero .pg, .hero .pg-canvas {
     position: absolute;
     top: 0;
@@ -124,14 +124,14 @@ a {
     width: 100%;
     height: 100%;
     z-index: 1; }
-  /* line 121, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 121, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .hero .topomap {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-    /* line 127, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 127, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     .hero .topomap .topomapsvg {
       height: 100%;
       transform: scale(1.5); }
@@ -155,10 +155,10 @@ a {
     background-position: -1643px 0; } }
 
 @-ms-keyframes backScroll {
-  /* line 148, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 148, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   0% {
     background-position: 0 0; }
-  /* line 149, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 149, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   100% {
     background-position: -1643px 0; } }
 
@@ -187,10 +187,10 @@ a {
     background-size: 120%; } }
 
 @-ms-keyframes backZoom {
-  /* line 169, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 169, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   0% {
     background-size: 100%; }
-  /* line 170, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 170, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   100% {
     background-size: 120%; } }
 
@@ -200,7 +200,7 @@ a {
   100% {
     background-size: 120%; } }
 
-/* line 178, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 178, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .inhero {
   background-image: url(/images/topomap.svg);
   background-size: auto;
@@ -215,10 +215,10 @@ a {
   max-height: 100%;
   align-content: center;
   align-items: center; }
-  /* line 192, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 192, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .inhero.maxed {
     max-height: 350px; }
-  /* line 195, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 195, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .inhero h1 {
     text-align: center;
     flex: auto;
@@ -232,17 +232,17 @@ a {
     text-align: center;
     z-index: 2; }
     @media only screen and (min-width: 769px) {
-      /* line 195, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 195, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       .inhero h1 {
         padding: 0 15vw;
         font-size: 300%; } }
-    /* line 211, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 211, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     .inhero h1 span img {
       position: absolute;
       margin: 9vw -15vw;
       width: 15vw; }
 
-/* line 218, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 218, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .inanimate {
   animation: backScroll 80s linear infinite;
   -moz-animation: backScroll 80s linear infinite;
@@ -250,7 +250,7 @@ a {
   -ms-animation: backScroll 80s linear infinite;
   -o-animation: backScroll 80s linear infinite; }
 
-/* line 225, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 225, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .inzoom {
   animation: backZoom 10s ease-out forwards;
   -moz-animation: backZoom 10s ease-out forwards;
@@ -258,28 +258,28 @@ a {
   -ms-animation: backZoom 10s ease-out forwards;
   -o-animation: backZoom 10s ease-out forwards; }
 
-/* line 232, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 232, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .inspon {
   background-image: url(/images/litxf.jpg);
   background-size: cover;
   background-position: center; }
 
-/* line 237, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 237, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .inabout {
   background-image: url(/images/about1.jpg);
   background-size: cover;
   background-position: center; }
 
-/* line 243, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 243, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .twothirds {
   padding: 0 2.5vw; }
   @media only screen and (min-width: 769px) {
-    /* line 243, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 243, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     .twothirds {
       padding: 0 16vw;
       text-align: center; } }
 
-/* line 252, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 252, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .reach h1 {
   font-size: 150%;
   width: 75%;
@@ -290,11 +290,11 @@ a {
   text-align: center;
   z-index: 2; }
   @media only screen and (min-width: 769px) {
-    /* line 252, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 252, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     .reach h1 {
       font-size: 300%; } }
 
-/* line 265, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 265, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .reach p {
   font-size: 110%;
   font-weight: 300;
@@ -306,43 +306,43 @@ a {
   text-align: center;
   z-index: 2; }
 
-/* line 278, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 278, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .about, .about2, .spon {
   background-color: #222;
   background-position: left center;
   background-size: cover;
   height: 100%; }
 
-/* line 287, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 287, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .about1 {
   background-position: left center;
   background-size: cover; }
 
-/* line 291, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 291, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .about2 {
   background-image: url(/images/tedx_1.jpg);
   background-position: left center;
   background-size: cover; }
 
-/* line 296, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 296, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .about3 {
   background-image: url(/images/tedx_4.jpg);
   background-position: left center;
   background-size: cover; }
 
-/* line 302, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 302, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .about2 {
   background-image: url(/images/tedx_3.jpg);
   text-align: right; }
-  /* line 305, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 305, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .about2 .flow, .about2 .fl-m-1, .about2 .fl-d-2 {
     float: right; }
 
-/* line 313, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 313, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .connect {
   width: 100%;
   background-color: #222; }
-  /* line 316, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 316, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .connect h1 {
     font-size: 250%;
     color: #fff;
@@ -350,10 +350,10 @@ a {
     z-index: 2;
     padding-bottom: 20px; }
     @media only screen and (min-width: 769px) {
-      /* line 316, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 316, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       .connect h1 {
         font-size: 400%; } }
-  /* line 326, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 326, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .connect p {
     font-size: 110%;
     font-weight: 300;
@@ -364,7 +364,7 @@ a {
     margin: 0 auto;
     text-align: center;
     z-index: 2; }
-  /* line 337, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 337, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .connect #myVideo {
     position: absolute;
     right: 0;
@@ -377,20 +377,20 @@ a {
     background-position: center center;
     background-size: contain;
     object-fit: cover; }
-  /* line 350, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 350, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .connect .flow {
     position: absolute;
     height: 500px;
     margin-top: -250px; }
 
-/* line 357, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 357, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .sponpopup {
   position: absolute;
   width: 100%;
   height: 45px;
   bottom: 0;
   left: 0; }
-  /* line 363, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 363, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .sponpopup p {
     text-align: center;
     margin: 0 5vw;
@@ -401,7 +401,7 @@ a {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease; }
-  /* line 370, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 370, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .sponpopup a {
     color: #ff2b06;
     -webkit-transition: color 300ms ease;
@@ -409,24 +409,24 @@ a {
     -ms-transition: color 300ms ease;
     -o-transition: color 300ms ease;
     transition: color 300ms ease; }
-    /* line 373, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 373, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     .sponpopup a:hover {
       color: #fff; }
-      /* line 375, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 375, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       .sponpopup a:hover p {
         background-color: #ff2b06; }
 
-/* line 383, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 383, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .logo {
   position: fixed;
   top: 5vw;
   left: 5vw;
   z-index: 5; }
-  /* line 388, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 388, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   .logo img {
     width: 250px; }
 
-/* line 393, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 393, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .viswait, .viswaitdelay, .viswaitthree {
   opacity: 0;
   -webkit-transition: opacity 2s ease;
@@ -435,12 +435,12 @@ a {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease; }
 
-/* line 397, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 397, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .visible {
   opacity: 1;
   visibility: visible; }
 
-/* line 402, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 402, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .hideme {
   opacity: 1;
   transform: translateY(0);
@@ -451,7 +451,7 @@ a {
   -o-transition: all 500ms ease;
   transition: all 500ms ease; }
 
-/* line 412, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 412, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .hideme img {
   transform: scale(1);
   -webkit-transition: all 1200ms ease;
@@ -460,16 +460,16 @@ a {
   -o-transition: all 1200ms ease;
   transition: all 1200ms ease; }
 
-/* line 420, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 420, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .imhidden {
   opacity: 0 !important;
   transform: translateY(20px); }
 
-/* line 424, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 424, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 .imhidden img {
   transform: scale(1.1) !important; }
 
-/* line 428, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+/* line 428, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
 nav {
   position: fixed;
   font-size: 120%;
@@ -481,7 +481,7 @@ nav {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
-  /* line 435, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 435, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   nav ul {
     list-style: none;
     margin: 5px 0;
@@ -493,20 +493,20 @@ nav {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease; }
-    /* line 442, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 442, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     nav ul.open {
       opacity: 1;
       visibility: visible; }
-    /* line 446, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 446, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     nav ul li {
       display: block;
       padding: 0 0 20px 0;
       margin: 0 0 0 40px; }
-      /* line 450, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 450, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       nav ul li a.active {
         padding-bottom: 10px;
         border-bottom: solid 2px rgba(255, 255, 255, 0.15); }
-  /* line 456, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+  /* line 456, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
   nav .navback {
     position: fixed;
     top: 0;
@@ -522,27 +522,68 @@ nav {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease; }
-    /* line 467, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 467, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     nav .navback.open {
       opacity: 1;
       visibility: visible; }
   @media only screen and (min-width: 769px) {
-    /* line 428, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+    /* line 428, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
     nav {
       display: block;
       font-size: 100%;
       top: 5vw;
       opacity: 1;
       visibility: visible; }
-      /* line 478, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 478, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       nav ul {
         opacity: 1;
         visibility: visible; }
-        /* line 481, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+        /* line 481, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
         nav ul li {
           display: inline-block; }
-      /* line 485, /Users/Matt/Sites/GRC338/TEDxSanLuisObispo/css/style.scss */
+      /* line 485, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
       nav .navback {
         display: none; } }
+
+/* line 491, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+.gettickets {
+  margin: auto 0;
+  background-color: #ff0000;
+  padding: 22px 28px;
+  font-weight: 800;
+  font-size: 110%;
+  text-align: center;
+  transition: all 300ms ease;
+  -webkit-transition: all 500ms ease; }
+  /* line 500, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+  .gettickets:hover {
+    background-color: #fff; }
+
+/* line 505, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+.speakerbio {
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease; }
+  /* line 508, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+  .speakerbio img {
+    border-radius: 500px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease; }
+  /* line 515, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+  .speakerbio h3 {
+    font-size: 150%;
+    color: #fff;
+    text-align: center; }
+  /* line 520, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+  .speakerbio p {
+    height: 450px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease; }
+  /* line 527, /Users/liblabs-mac/Downloads/tedxslo-master/css/style.scss */
+  .speakerbio:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
 
 /*# sourceMappingURL=style.css.map */
